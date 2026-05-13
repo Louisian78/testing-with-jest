@@ -21,3 +21,8 @@ exports.peek = function () {
 exports.clear = function () {
     stack = [];
 };
+
+exports.size = function () {
+    return stack.length;
+
+};
