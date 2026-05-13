@@ -1,0 +1,32 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "A Jest + npm lab session",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louisian78/testing-with-jest.git"
+  },
+  "keywords": [],
+  "author": "Louisian Boltner",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Louisian78/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/Louisian78/testing-with-jest#readme",
+  "dependencies": {
+    "underscore": "^1.13.8"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^14.0.0",
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2"
+  }
+}
