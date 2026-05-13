@@ -26,3 +26,13 @@ test('clear removes all elements from the stack', () => {
 
     expect(stack.peek()).toBeUndefined();
 });
+
+test('size returns the number of elements in the stack', () => {
+    stack.clear();
+
+    stack.push("A");
+    stack.push("B");
+    stack.push("C");
+
+    expect(stack.size()).toBe(3);
+});
