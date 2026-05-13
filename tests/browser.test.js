@@ -53,3 +53,11 @@ test('Popping the last item should reset the display to n/a', async () => {
     expect(stackText).toEqual("n/a");
 
 });
+
+test('The page heading should have an exlcamation mark at the end', async () => {
+    await driver.get(fileunderTest);
+
+    let heading = await driver.findElement(By.tagName('h1')).getText();
+
+    expect(heading).toEqual("Här kan vi leka med en stack!")
+});
