@@ -17,3 +17,12 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+test('clear removes all elements from the stack', () => {
+    stack.push("first");
+    stack.push("second");
+
+    stack.clear();
+
+    expect(stack.peek()).toBeUndefined();
+});

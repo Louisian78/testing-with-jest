@@ -32,3 +32,24 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+test('Popping the last item should reset the display to n/a', async () => {
+    await driver.get(fileUnderTest);
+
+    let push = await driver.findElement(By.id('push'));
+    await push.click();
+
+    let prompt = await driver.switchTo().alert();
+    await prompt.sendKeys("Äpple");
+    await prompt.accept();
+
+    let pop = await driver.findElement(By.id('pop'));
+    await pop.click();
+
+    let alert = await driver.switchTo().alert();
+    await alert.accept();
+
+    let stackText = await driver.findElement(By.id('top_of_stack')).getText();
+    expect(stackText).toEqual("n/a");
+
+});
