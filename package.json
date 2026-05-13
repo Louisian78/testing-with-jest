@@ -16,7 +16,6 @@
   "keywords": [],
   "author": "Louisian Boltner",
   "license": "MIT",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Louisian78/testing-with-jest/issues"
   },
