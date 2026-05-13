@@ -55,7 +55,7 @@ test('Popping the last item should reset the display to n/a', async () => {
 });
 
 test('The page heading should have an exlcamation mark at the end', async () => {
-    await driver.get(fileunderTest);
+    await driver.get(fileUnderTest);
 
     let heading = await driver.findElement(By.tagName('h1')).getText();
 
