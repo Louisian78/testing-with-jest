@@ -36,3 +36,14 @@ test('size returns the number of elements in the stack', () => {
 
     expect(stack.size()).toBe(3);
 });
+
+test('pop returns and removes the top element', () => {
+    stack.clear();
+
+    stack.push("A");
+    stack.push("B");
+
+    expect(stack.pop()).toBe("B");
+    expect(stack.peek()).toBe("A");
+
+});
